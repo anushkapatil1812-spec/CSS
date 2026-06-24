@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <style>
+        body{
+    margin:0;
+    height:150vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#9ed8eb;
+    font-family:Arial, sans-serif;
+}
+
+.card{
+    width:900px;
+    height:620px;
+    background:#d8eef7;
+    border-radius:25px;
+    display:flex;
+    padding:50px;
+    box-sizing:border-box;
+    position:relative;
+    overflow:hidden;
+}
+
+
+.card::before{
+    content:"";
+    position:absolute;
+    width:250px;
+    height:250px;
+    background:#6f8ff0;
+    border-radius:50%;
+    top:-110px;
+    right:-110px;
+}
+
+.profile img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:8px solid white;
+    object-fit:cover;
+}
+
+.content{
+    margin-left:50px;
+}
+
+.content h1{
+    font-size:55px;
+    margin-bottom:5px;
+}
+
+.content h3{
+    margin-top:0;
+}
+
+.content p{
+    font-size:25px;
+    line-height:1.5;
+    max-width:650px;
+}
+
+.stats{
+    display:flex;
+    gap:80px;
+    margin-top:40px;
+}
+
+.stats h2{
+    margin:0;
+    font-size:45px;
+}
+
+.stats span{
+    font-size:25px;
+    font-weight:bold;
+}
+
+.buttons{
+    margin-top:40px;
+    display:flex;
+    gap:20px;
+}
+
+.follow{
+    width:180px;
+    height:60px;
+    border:none;
+    border-radius:10px;
+    background:black;
+    color:white;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.view{
+    width:220px;
+    height:60px;
+    border-radius:10px;
+    border:2px solid black;
+    background:transparent;
+    font-size:22px;
+    font-weight:bold;
+}
+        
+    </style>
+</head>
+
+<div class="card">
+
+    <div class="profile">
+        <img src="women.png" alt="">
+    </div>
+
+    <div class="content">
+        <h1>Anushka Patil</h1>
+        <h3>@anushkapatil</h3>
+
+        <p>
+            I'm a Front End Developer, follow me to be the
+            first who see my new work.
+        </p>
+
+        <div class="stats">
+            <div>
+                <h2>15K</h2>
+                <span>Views</span>
+            </div>
+
+            <div>
+                <h2>82</h2>
+                <span>Projects</span>
+            </div>
+
+            <div>
+                <h2>1.3M</h2>
+                <span>Followers</span>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button class="follow">Follow</button>
+            <button class="view">View Profile</button>
+        </div>
+    </div>
+
+</div>
+
+</html>

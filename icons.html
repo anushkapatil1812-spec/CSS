@@ -1,0 +1,131 @@
+<!-- websites: fevicons,font awesome-icons -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="favicon.ico">
+ <link rel="icon" type="image/png" href="./secure-user.png">
+    
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <title>Sign In</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: "Bitcount Grid Double", system-ui;
+     font-optical-sizing: auto;
+     font-weight: 400;
+     font-style: normal;
+    font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+        
+        }
+
+        body{
+            background:#111;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+        }
+        
+    
+
+        .container{
+            width:380px;
+            background:black;
+            border-radius:30px;
+            padding:50px 40px;
+            box-shadow:0 0 15px rgba(255,255,255,0.2);
+        }
+
+        h1{
+            text-align:center;
+            color:white;
+            margin-bottom:50px;
+            font-size:40px;
+            letter-spacing:2px;
+        }
+
+        .input-box{
+            display:flex;
+            align-items:center;
+            margin-bottom:45px;
+        }
+
+        .input-box i{
+            color:blue;
+            font-size:28px;
+            margin-right:15px;
+        }
+
+        .input-box input{
+            width:100%;
+            background:transparent;
+            border:none;
+            border-bottom:2px solid white;
+            outline:none;
+            color:white;
+            font-size:18px;
+            padding:8px;
+        }
+
+        .btn{
+            display:block;
+            margin:40px auto 0;
+            padding:15px 45px;
+            border:none;
+            border-radius:40px;
+            background:white;
+            color:#333;
+            font-size:20px;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        .btn{
+            
+            background-color:white;
+
+
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>SIGN IN</h1>
+
+    <div class="input-box">
+        <i class="fa-solid fa-user"></i>
+        <input type="text" placeholder="Username">
+    </div>
+
+    <div class="input-box">
+        <i class="fa-solid fa-envelope"></i>
+        <input type="email" placeholder="Email">
+    </div>
+
+    <div class="input-box">
+        <i class="fa-solid fa-phone"></i>
+        <input type="tel" placeholder="Phone Number">
+    </div>
+
+    <button class="btn">SIGN IN</button>
+</div>
+
+</body>
+</html>

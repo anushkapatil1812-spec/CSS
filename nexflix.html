@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Netflix </title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url("https://tse3.mm.bing.net/th/id/OIP.K_Hrme2LHp0FfZz1zB4a2AHaEK?r=0&cb=thfc1falcon2&rs=1&pid=ImgDetMain&o=7&rm=3") fixed;
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+    color:white;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+}
+
+.logo{
+    color:red;
+    font-size:50px;
+    font-weight:bold;
+   
+}
+
+.right{
+    display:flex;
+    gap:20px;
+}
+
+select{
+    background:transparent;
+    color:white;
+    padding:10px;
+    border:1px solid white;
+    border-radius:5px;
+}
+
+button{
+    background:red;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.content{
+    text-align:center;
+    margin-top:150px;
+}
+
+.content h1{
+    font-size:60px;
+}
+
+.content h2{
+    font-size:25px;
+    margin-top:20px;
+}
+
+.content p{
+    font-size:20px;
+    margin:30px 0;
+}
+
+.email{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+}
+
+input{
+    width:400px;
+    padding:18px;
+    background:rgba(0,0,0,0.5);
+    border:1px solid white;
+    color:white;
+    border-radius:5px;
+}
+
+.start{
+    padding:18px 35px;
+    font-size:25px;
+}
+
+
+.reason{
+    padding:50px;
+}
+
+.container{
+    display:flex;
+    gap:20px;
+}
+
+.card{
+    width:400px;
+    height:250px;
+    border-radius:20px;
+    padding:30px;
+    background:linear-gradient(to bottom right,#1a2250,#30011d);
+}
+
+.card p{
+    color:gray;
+    font-size:20px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">NETFLIX</div>
+
+    <div class="right">
+        <select>
+            <option>English</option>
+        </select>
+
+        <button>Sign In</button>
+    </div>
+</header>
+
+<div class="content">
+    <h1>Unlimited movies, shows,<br>and more</h1>
+
+    <h2>Starts at ₹149. Cancel at any time.</h2>
+
+    <p>Ready to watch? Enter your email to create or restart your membership.</p>
+
+    <div class="email">
+        <input type="email" placeholder="Email address">
+        <button class="start">Get Started ></button>
+    </div>
+</div>
+<section class="reason">
+    <h1>More reasons to join</h1>
+
+    <div class="container">
+        <div class="card">
+            <h2>Enjoy on your TV</h2>
+            <p>Watch on smart TVs, PlayStation, Xbox, Chromecast and more.</p>
+        </div>
+
+        <div class="card">
+            <h2>Download your shows to watch offline</h2>
+            <p>Save your favourites easily and always have something to watch.</p>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

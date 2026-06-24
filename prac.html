@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Netflix Clone</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1920") no-repeat center center/cover;
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+    color:white;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+}
+
+.logo{
+    color:red;
+    font-size:50px;
+    font-weight:bold;
+}
+
+.right{
+    display:flex;
+    gap:20px;
+}
+
+select{
+    background:transparent;
+    color:white;
+    padding:10px;
+    border:1px solid white;
+    border-radius:5px;
+}
+
+button{
+    background:red;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.content{
+    text-align:center;
+    margin-top:150px;
+}
+
+.content h1{
+    font-size:60px;
+}
+
+.content h2{
+    font-size:25px;
+    margin-top:20px;
+}
+
+.content p{
+    font-size:20px;
+    margin:30px 0;
+}
+
+.email{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+}
+
+input{
+    width:400px;
+    padding:18px;
+    background:rgba(0,0,0,0.5);
+    border:1px solid white;
+    color:white;
+    border-radius:5px;
+}
+
+.start{
+    padding:18px 35px;
+    font-size:25px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">NETFLIX</div>
+
+    <div class="right">
+        <select>
+            <option>English</option>
+        </select>
+
+        <button>Sign In</button>
+    </div>
+</header>
+
+<div class="content">
+    <h1>Unlimited movies, shows,<br>and more</h1>
+
+    <h2>Starts at ₹149. Cancel at any time.</h2>
+
+    <p>Ready to watch? Enter your email to create or restart your membership.</p>
+
+    <div class="email">
+        <input type="email" placeholder="Email address">
+        <button class="start">Get Started ></button>
+    </div>
+</div>
+
+</body>
+</html>

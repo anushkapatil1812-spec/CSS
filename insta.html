@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:black;
+}
+
+.insta{
+    width:250px;
+    height:250px;
+    border-radius:60px;
+    background:linear-gradient(
+        45deg,
+        #f9ce34,
+        #ee2a7b,
+        #6228d7
+    );
+    position:relative;
+}
+
+.insta::before{
+    content:"";
+    position:absolute;
+    top:40px;
+    left:40px;
+    width:170px;
+    height:170px;
+    border:15px solid white;
+    border-radius:50px;
+}
+
+.insta::after{
+    content:"";
+    position:absolute;
+    top:70px;
+    left:70px;
+    width:80px;
+    height:80px;
+    border:15px solid white;
+    border-radius:50%;
+}
+
+.dot{
+    position:absolute;
+    width:20px;
+    height:20px;
+    background:white;
+    border-radius:50%;
+    top:60px;
+    right:60px;
+}
+</style>
+</head>
+<body>
+
+<div class="insta">
+    <div class="dot"></div>
+</div>
+
+</body>
+</html>

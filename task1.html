@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Login </title>
+    
+   
+    <style>
+       
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f1f3f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-container {
+            display: flex;
+            width: 650px;
+            height: 400px;
+            background-color: #fff;
+            box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .blue-sidebar {
+            width: 40%;
+            background-color: #2874f0; 
+            color: white;
+            padding: 35px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .blue-sidebar h2 {
+            margin: 0 0 15px 0;
+            font-size: 24px;
+        }
+
+        .blue-sidebar p {
+            font-size: 15px;
+            line-height: 1.5;
+            color: #dbdbdb;
+        }
+
+        .sidebar-image {
+            position: absolute;
+            bottom: 25px;
+            left: 0;
+            right: 0;
+            text-align: center;
+        }
+
+        .sidebar-image img {
+            width: 150px;
+        }
+
+        
+        .form-section {
+            width: 60%;
+            padding: 40px 35px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        
+        .input-group {
+            position: relative;
+            margin-bottom: 25px;
+            margin-top: 15px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px 0;
+            font-size: 14px;
+            border: none;
+            border-bottom: 1px solid #d4d4d4;
+            outline: none;
+            background: transparent;
+        }
+
+        .input-group label {
+            position: absolute;
+            left: 0;
+            top: 10px;
+            font-size: 14px;
+            color: #878787;
+            pointer-events: none;
+            
+        }
+
+
+       
+
+        .input-group input:focus {
+            border-bottom: 1px solid #2874f0;
+        }
+
+        .terms-text {
+            font-size: 12px;
+            color: #878787;
+            line-height: 1.4;
+            margin-bottom: 20px;
+        }
+
+        .terms-text a {
+            color: #2874f0;
+            text-decoration: none;
+        }
+
+        
+        .otp-btn {
+            background-color: #fb641b; 
+            color: #fff;
+            border: none;
+            width: 100%;
+            height: 48px;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 2px;
+            cursor: pointer;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+       
+        <div class="blue-sidebar">
+            <h2>Login</h2>
+            <p>Get access to your Orders, Wishlist and Recommendations</p>
+            <div class="sidebar-image">
+                <!-- Flipkart standard illustration image -->
+                <img src="/img1.png.png" alt="Flipkart Login">
+            </div>
+        </div>
+
+      
+        <div class="form-section">
+            <div class="input-group">
+                <input type="text" id="username" required placeholder=" ">
+                <label for="username">Enter Email/Mobile number</label>
+            </div>
+            
+            <p class="terms-text">
+                By continuing, you agree to Flipkart's <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.
+            </p>
+
+            <button class="otp-btn">Request OTP</button>
+
+            <div class="footer-link">
+                <a href="#">New to Flipkart? Create an account</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Navbar</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+        }
+
+        /* Navbar */
+        nav{
+            background:#333;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:15px 50px;
+        }
+
+        .logo{
+            color:white;
+            font-size:28px;
+            font-weight:bold;
+        }
+
+        ul{
+            list-style:none;
+            display:flex;
+        }
+
+        ul li{
+            margin-left:25px;
+        }
+
+        ul li a{
+            text-decoration:none;
+            color:white;
+            font-size:18px;
+            transition:0.3s;
+        }
+
+        ul li a:hover{
+            color:#00bcd4;
+        }
+
+        /* Hero Section */
+        .hero{
+            height:90vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+            text-align:center;
+        }
+
+        .hero h1{
+            font-size:50px;
+            color:#333;
+        }
+
+        .hero p{
+            margin-top:15px;
+            font-size:20px;
+            color:#666;
+        }
+
+        .btn{
+            margin-top:20px;
+            padding:12px 25px;
+            background:#00bcd4;
+            color:white;
+            text-decoration:none;
+            border-radius:5px;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            background:#0097a7;
+        }
+
+        /* Responsive */
+        @media(max-width:768px){
+            nav{
+                flex-direction:column;
+            }
+
+            ul{
+                flex-direction:column;
+                margin-top:15px;
+            }
+
+            ul li{
+                margin:10px 0;
+            }
+
+            .hero h1{
+                font-size:35px;
+            }
+
+            .hero p{
+                font-size:18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">MyWebsite</div>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to My Website</h1>
+        <a href="#" class="btn">Get Started</a>
+    </section>
+
+</body>
+</html>
